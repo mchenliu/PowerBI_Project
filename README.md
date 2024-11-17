@@ -30,7 +30,6 @@ Here's an overall view of the KPIs comapring with previous month:
 - **Returns:** a 1.78% decrease from 169 to 166.
 Overall KPIs are met and numbers seem positive.
 ![KPI](https://github.com/user-attachments/assets/1f8600cd-9e14-4b66-a6e2-fc5e19eca325)
-
 *KPI cards to visualize revenue, orders and returns comparing with last month's data*
 
 I breakdown orders further by category and here are my findings:
@@ -57,16 +56,24 @@ I breakdown orders further by category and here are my findings:
 
 
 ### 2. Which region has the best performance?
-To understand which region has the best performance, I used total orders measure table combining with terriotry hierarchy to drill down to country leve.
+To understand which region has the best performance, I used total orders measure table combining with terriotry hierarchy to drill down to country leve. We can easily find most orders are coming from the US and Australia judjing by the size of bubbles. Other orders are from Europe and Canada.
 ![map](https://github.com/user-attachments/assets/b3d278e6-db5a-47cc-acdc-63d5dcc21556)
-*Inveractive map to visualize order amount by continent*
+*Map to visualize order amount by continent/country*
 
 ![geo_breakdown_usa](https://github.com/user-attachments/assets/5e1795db-080b-4471-9360-936c5818ef1a)
-*Hover to find total orders by country*
-
+*Slicers added to make the map interative*
 
 ### 3. What are the product-level trends?
+
+![Behind target](https://github.com/user-attachments/assets/728af285-83ff-43db-92f8-c95117e4f7b7)
+*Gauge charts with conditional formatting to show products behind target*
+
+![area chart](https://github.com/user-attachments/assets/634d97ce-5556-4d6d-bf63-541e7a01c384)
+*Area charts with drill mode on*
 ### 4. Who are the high-value customers?
+
+![Revenue_per_customer](https://github.com/user-attachments/assets/678c0133-20cc-4857-beab-388b4f217d81)
+*Line chart to show revenue per customer*
 # What I Learned
 ### Insights
 ### Closing Thoughts
