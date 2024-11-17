@@ -70,9 +70,6 @@ Gauge charts with conditional formatting highlight products that fell short of t
 *Area charts with drill mode on*
 
 ### 4. Who are the high-value customers?
-To find out who are the high-value customers. I combined customer lookup table with total orders table and total revenue table. A Year slicer is also added.
-
-Here are my findings about AdventureWorks' high-value customers:
 High-value customers were identified by combining customer lookup, total orders, and total revenue tables, with an additional year slicer for analysis.
 
 **Findings:**
@@ -89,7 +86,6 @@ High-value customers were identified by combining customer lookup, total orders,
 
 *Year filter added to show changes in customers*
 
-- There is an *increase in number of unique customers and decrease in revenue per customer* between 2020 and 2022. The number of customers increased from 2,630 to over 17,000 while revenue per customer dropped by $1,000. The line chart is also showing a decreasing trend.
 ![Revenue per customer](https://github.com/user-attachments/assets/84692b0f-edf5-4720-91cb-a7a3585e0fe3)
 *Line chart showing decreasing trend in revenue per customer*
 
