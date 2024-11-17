@@ -2,7 +2,7 @@
 # Introduction
 :mega: This project transform raw comapny data from a AdventureWorks, a global manufacturing company that produces cycling equipment and accessories into reports and dashboards to provide more management insights. The objective is to track KPIs, compare regional performance, analyze product-level trends and identify high-value customers.
 
-:computer: Check out the PowerBI reoport here: [AdventureWorks Report]([AdventureWorks Report](https://github.com/mchenliu/PowerBI_Project/blob/main/AdventureWorks%20Report.pbix))
+:computer: Check out the PowerBI reoport here: ([AdventureWorks Report](https://github.com/mchenliu/PowerBI_Project/blob/main/AdventureWorks%20Report.pbix))
 
 # Background
 ### The questions I wanted to answer through my PowerBI report were:
