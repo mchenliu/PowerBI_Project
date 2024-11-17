@@ -37,10 +37,23 @@ I breakdown orders further by category and here are my findings:
 - **Accessories:** 
     - Accessories dominants sales by order amount however the 7.19% decrease in revenue and 5.51% decrease in order amount is alarming.
     - The most popular accessory is *30 oz Water Bottle* and it brings a good amount of revenue. 
-    - *Sport-100 Helmets* gerates great revenue however it also has the highest return rate.
+    - *Sport-100 Helmets* generates great revenue however it also has the highest return rate.
 
-![orders_breakdown](https://github.com/user-attachments/assets/33ae99ec-1adb-4554-943d-bedc9b9883bb)
-*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
+![orders_breakdown](https://github.com/user-attachments/assets/33ae99ec-1adb-4554-943d-bedc9b9883bb)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
+
+- **Bikes:** 
+    - Bikes sale contributes to most of the monthly revenue ($23.6M/$24.9M) It also has the highest profit among all 3 categories. Forcast is showing a steady growth in revenue and so is actual data. Growth in both revenue and order amount shows a promising sign. Meanwhile *Road-750 Black* is showing a high return rate of 4.23% that should be looked into.
+    - The *Mountain-200* series are the most popular bikes. It's a road bike and the least favoured bike type is touring bikes.
+
+![KPI](https://github.com/user-attachments/assets/58bb94c6-ea98-4e9c-b046-0fa636e22148)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
+
+- **Clothing:** 
+    - Clothing has the least sale among all 3 categories and generates the least income. However, there is a slow growth in revenue based on forecast and there is a 10.85% increase in order amount and a 11.45% increase in revenue comparing to last month. This shows a positive sign for the clothing category.
+    - The *AWC Logo Cap* is most favoured by consumers. It leads order amount and revenue in clothing category with a very low return rate of 1.11%. 
+    - *Long-Sleeve Logo Jerseys* in all sizes have high return rates (around 3%). This should raise a flag for review.
+
+![KPI](https://github.com/user-attachments/assets/bec9150b-8544-4e79-a77b-5dce1f73ccf5)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
+
 
 ### 2. Which region has the best performance?
 To understand which region has the best performance, I used total orders measure table combining with terriotry hierarchy to drill down to country leve.
