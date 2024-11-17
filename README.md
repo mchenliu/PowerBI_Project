@@ -1,70 +1,54 @@
 # Introduction
-:mega: This project transform raw comapny data from AdventureWorks, a global manufacturing company that produces cycling equipment and accessories, into reports and dashboards to provide management insights. The objective is to track KPIs, compare regional performance, analyze product-level trends and identify high-value customers. This project is completed following instructions of Maven Analytics' [course](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop).
+:mega: This project transforms raw data from AdventureWorks, a global manufacturer of cycling equipment and accessories, into insightful reports and dashboards. The primary objective is to track KPIs, compare regional performance, analyze product trends, and identify high-value customers. This project was completed as part of Maven Analytics' [course](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop).
 
 :computer: Check out the PowerBI reoport here: [AdventureWorks Report](https://github.com/mchenliu/PowerBI_Project/blob/main/AdventureWorks%20Report.pbix)
 
 # Background
-### The questions I wanted to answer through my PowerBI report were:
+### This Power BI report was created to answer the following key business questions:
 
-Below are the questions I want to answer in my project:
-
-1. Were KPIs met (comparing with previous month)?
-2. Which region has the best performance?
+1. Were KPIs met compared to the previous month?
+2. Which region demonstrates the best performance?
 3. What are the product-level trends?
 4. Who are the high-value customers?
 
 # Tools I Used
-- **PowerBI Desktop:** A buisness intelligence platform for connecting, modeling and visualizing data. This application is the core of this project.
-- **Query Editor:** Essential tool to for  automate data cleaning and ETL process.
-- **DAX**: Used to analyze relational data models.
-- **Github:** My go-to for version control platform. It is used to share my analysis and track my projects.
+- **PowerBI Desktop:** Business intelligence platform for connecting, modeling, and visualizing data.
+- **Query Editor:** Essential tool to for  automated data cleaning and ETL processes.
+- **DAX**: Data analysis expressions for calculating and analyzing relational data models.
+- **Github:** My go-to for version control and tracking my project progress.
 
 # The Analysis
-### 1. Comparing with the previous month, were KPIs met?
-KPIs are split into 3 categories- revenue, orders and returns. To identify if KPIs are met, I combined current month and previous measure tables on these 3 aspects. 
+### 1. Were KPIs met compared to the previous month?
+KPIs were divided into three categories: revenue, orders, and returns. To assess KPI performance, I compared metrics for the current and previous month:
 
-Here's an overall view of the KPIs comapring with previous month:
-- **Revenue:** a 3.31% increase from $1.77 million to $1.83 million.
-- **Orders:** a 0.88% drecrease from 2,165 to 2,146.
-- **Returns:** a 1.78% decrease from 169 to 166.
-Overall KPIs are met and numbers seem positive.
+**Overall, the KPIs show positive growth. KPI cards were used to visualize these comparisons.**
+
 ![KPI](https://github.com/user-attachments/assets/1f8600cd-9e14-4b66-a6e2-fc5e19eca325)
 
 *KPI cards to visualize revenue, orders and returns comparing with last month's data*
 
-I breakdown orders further by category and here are my findings:
+**Detailed Findings by Product Category**
 
-- **Accessories:** 
-    - Accessories dominants sales by order amount however the 7.19% decrease in revenue and 5.51% decrease in order amount is alarming.
-    - The most popular accessory is *30 oz Water Bottle* and it brings a good amount of revenue. 
-    - *Sport-100 Helmets* generates great revenue however it also has the highest return rate.
-
+- **Accessories:**
+  Accessories led sales by order volume. However, a 7.19% revenue decline and a 5.51% drop in order volume raise concerns. The *30 oz Water Bottle* is the most popular item, generating substantial revenue, while the *Sport-100 Helmet*, despite high revenue, has the highest return rate.
 ![orders_breakdown](https://github.com/user-attachments/assets/33ae99ec-1adb-4554-943d-bedc9b9883bb)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
 
 
-- **Bikes:** 
-    - Bikes sale contributes to most of the monthly revenue ($23.6M/$24.9M) It also has the highest profit among all 3 categories. Forcast is showing a steady growth in revenue and so is actual data. Growth in both revenue and order amount shows a promising sign. Meanwhile *Road-750 Black* is showing a high return rate of 4.23% that should be looked into.
-    - The *Mountain-200* series are the most popular bikes. It's a road bike and the least favoured bike type is touring bikes.
+- **Bikes:**
+    Bikes contribute the most to monthly revenue ($23.6M of $24.9M) and have the highest profit margins. Forecasts predict steady growth, supported by actual data. *Road-750 Black* shows a high return rate (4.23%), which requires attention. The *Mountain-200 series* is the most popular bike, while touring bikes are the least favored.
 
 ![KPI](https://github.com/user-attachments/assets/58bb94c6-ea98-4e9c-b046-0fa636e22148)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
 
 
 - **Clothing:** 
-    - Clothing has the least sale among all 3 categories and generates the least income. However, there is a slow growth in revenue based on forecast and there is a 10.85% increase in order amount and a 11.45% increase in revenue comparing to last month. This shows a positive sign for the clothing category.
-    - The *AWC Logo Cap* is most favoured by consumers. It leads order amount and revenue in clothing category with a very low return rate of 1.11%. 
-    - *Long-Sleeve Logo Jerseys* in all sizes have high return rates (around 3%). This should raise a flag for review.
+    Clothing has the lowest sales and revenue, but shows a 10.85% increase in order volume and an 11.45% revenue growth compared to last month, indicating a positive trend. The *AWC Logo Cap* leads in sales and revenue with a low return rate of 1.11%, while the *Long-Sleeve Logo Jerseys* have a high return rate (around 3%), warranting further investigation.
 
 ![KPI](https://github.com/user-attachments/assets/bec9150b-8544-4e79-a77b-5dce1f73ccf5)
 *Matrix with top 10 products filtering and condition formatting to drill KPIs further*
 
 
 ### 2. Which region has the best performance?
-To understand which region has the best performance, I used total orders measure table combining with terriotry hierarchy to drill down to country level.
-
-Here's my finding in which region has the best performance:
-
-Most orders are coming from the *US and Australia* judjing by the size of their bubbles.
-There are also orders from *Europe and Canada*.
+Using a total orders table combined with territory hierarchy, I identified top-performing regions by analyzing orders at the country level. *The U.S. and Australia* lead in order volume, with additional contributions from *Europe and Canada*.
 
 ![map](https://github.com/user-attachments/assets/b3d278e6-db5a-47cc-acdc-63d5dcc21556)
 *Map to visualize order amount by continent/country*
@@ -73,6 +57,8 @@ There are also orders from *Europe and Canada*.
 *Slicers added to make the map interative*
 
 ### 3. What are the product-level trends?
+
+Gauge charts with conditional formatting highlight products that fell short of targets, while area charts (with drill-down capability) provide a detailed view of trends across categories.
 
 ![Behind target](https://github.com/user-attachments/assets/728af285-83ff-43db-92f8-c95117e4f7b7)
 *Gauge charts with conditional formatting to show products behind target*
@@ -84,8 +70,13 @@ There are also orders from *Europe and Canada*.
 To find out who are the high-value customers. I combined customer lookup table with total orders table and total revenue table. A Year slicer is also added.
 
 Here are my findings about AdventureWorks' high-value customers:
-- *Mr. Maurice Shan* is the top revenue contributor ($12,400). He placed total of 6 orders from 2020 to 2022. Followed closely by *Mrs. Janet Munoz* ($12,015) who also placed 6 orders in the couse of 2020 to 2022.
-- From 2020 to 2021, *Mr. Larry Vazquez*, *Mr. Clarence Gao*, *Mr. Aaron Wright* and *Mrs. Bonnie Nath* are the high-value customers. Followed by overall valued customers *Mr. Maurice Shan* and *Mrs. Janet Munoz*. This might be an indicator that AdventureWorkds' customer profile has changed or something was wrong to cause drop of top 4 valued customers in a year.
+High-value customers were identified by combining customer lookup, total orders, and total revenue tables, with an additional year slicer for analysis.
+
+**Findings:**
+
+- *Mr. Maurice Shan* is the top revenue contributor ($12,400) with six orders from 2020-2022, followed closely by *Mrs. Janet Munoz* ($12,015).
+- Notably, high-value customers from 2020-2021, such as *Mr. Larry Vazquez*, *Mr. Clarence Gao*, *Mr. Aaron Wright*, and *Mrs. Bonnie Nath*, are absent in 2022, potentially indicating shifts in the customer profile or other market changes.
+- The *number of unique customers grew* from 2,630 to over 17,000 between 2020 and 2022, although *revenue per customer declined* by $1,000, as shown in a line chart.
 
 ![Top customers](https://github.com/user-attachments/assets/5a5d9161-effb-447d-9d0c-3f5bf09f266e)
 
