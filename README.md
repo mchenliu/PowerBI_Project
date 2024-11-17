@@ -30,18 +30,21 @@ KPIs were divided into three categories: revenue, orders, and returns. To assess
 **Detailed Findings by Product Category**
 
 - **Accessories:**
+
   Accessories led sales by order volume. However, a 7.19% revenue decline and a 5.51% drop in order volume raise concerns. The *30 oz Water Bottle* is the most popular item, generating substantial revenue, while the *Sport-100 Helmet*, despite high revenue, has the highest return rate.
 ![orders_breakdown](https://github.com/user-attachments/assets/33ae99ec-1adb-4554-943d-bedc9b9883bb)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
 
 
 - **Bikes:**
-    Bikes contribute the most to monthly revenue ($23.6M of $24.9M) and have the highest profit margins. Forecasts predict steady growth, supported by actual data. *Road-750 Black* shows a high return rate (4.23%), which requires attention. The *Mountain-200 series* is the most popular bike, while touring bikes are the least favored.
+
+  Bikes contribute the most to monthly revenue ($23.6M of $24.9M) and have the highest profit margins. Forecasts predict steady growth, supported by actual data. *Road-750 Black* shows a high return rate (4.23%), which requires attention. The *Mountain-200 series* is the most popular bike, while touring bikes are the least favored.
 
 ![KPI](https://github.com/user-attachments/assets/58bb94c6-ea98-4e9c-b046-0fa636e22148)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
 
 
-- **Clothing:** 
-    Clothing has the lowest sales and revenue, but shows a 10.85% increase in order volume and an 11.45% revenue growth compared to last month, indicating a positive trend. The *AWC Logo Cap* leads in sales and revenue with a low return rate of 1.11%, while the *Long-Sleeve Logo Jerseys* have a high return rate (around 3%), warranting further investigation.
+- **Clothing:**
+
+  Clothing has the lowest sales and revenue, but shows a 10.85% increase in order volume and an 11.45% revenue growth compared to last month, indicating a positive trend. The *AWC Logo Cap* leads in sales and revenue with a low return rate of 1.11%, while the *Long-Sleeve Logo Jerseys* have a high return rate (around 3%), warranting further investigation.
 
 ![KPI](https://github.com/user-attachments/assets/bec9150b-8544-4e79-a77b-5dce1f73ccf5)
 *Matrix with top 10 products filtering and condition formatting to drill KPIs further*
