@@ -29,6 +29,7 @@ Here's an overall view of the KPIs comapring with previous month:
 - **Returns:** a 1.78% decrease from 169 to 166.
 Overall KPIs are met and numbers seem positive.
 ![KPI](https://github.com/user-attachments/assets/1f8600cd-9e14-4b66-a6e2-fc5e19eca325)
+
 *KPI cards to visualize revenue, orders and returns comparing with last month's data*
 
 I breakdown orders further by category and here are my findings:
@@ -55,7 +56,7 @@ I breakdown orders further by category and here are my findings:
 
 
 ### 2. Which region has the best performance?
-To understand which region has the best performance, I used total orders measure table combining with terriotry hierarchy to drill down to country leve. We can easily find most orders are coming from the US and Australia judjing by the size of bubbles. Other orders are from Europe and Canada.
+To understand which region has the best performance, I used total orders measure table combining with terriotry hierarchy to drill down to country level. I can easily find most orders are coming from the US and Australia judjing by the size of their bubbles. Other orders are from Europe and Canada.
 ![map](https://github.com/user-attachments/assets/b3d278e6-db5a-47cc-acdc-63d5dcc21556)
 *Map to visualize order amount by continent/country*
 
