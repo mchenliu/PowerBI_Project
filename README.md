@@ -30,6 +30,7 @@ Here's an overall view of the KPIs comapring with previous month:
 - **Returns:** a 1.78% decrease from 169 to 166.
 Overall KPIs are met and numbers seem positive.
 ![KPI](https://github.com/user-attachments/assets/1f8600cd-9e14-4b66-a6e2-fc5e19eca325)
+
 *KPI cards to visualize revenue, orders and returns comparing with last month's data*
 
 I breakdown orders further by category and here are my findings:
