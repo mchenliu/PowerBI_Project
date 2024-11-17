@@ -23,7 +23,56 @@ KPIs were divided into three categories: revenue, orders, and returns. To assess
 
 **Overall, the KPIs show positive growth. KPI cards were used to visualize these comparisons.**
 
+```DAX
+Total Revenue = 
+    SUMX(
+        'Sales Data',
+        'Sales Data'[OrderQuantity] * 
+        RELATED(
+            'Product Lookup'[ProductPrice])
+        )
+
+Previous Month Revenue = 
+CALCULATE(
+    [Total Revenue],
+    DATEADD('Calendar Lookup'[Date],
+    -1,
+    MONTH)
+)
+
+Total Orders = 
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+
+Previous Month Orders = 
+CALCULATE(
+    [Total Orders],
+    DATEADD(
+        'Calendar Lookup'[Date],
+        -1,
+        MONTH))
+Total Returns = 
+COUNT('Returns Data'[ReturnQuantity]
+)
+Previous Month Returns = 
+CALCULATE(
+    [Total Returns],
+    DATEADD(
+        'Calendar Lookup'[Date],
+        -1,
+        MONTH))
+Return rate = 
+CALCULATE(
+   [Quantity Returned]/[Quantity Sold]
+)
+```
+*DAX for measure tables*
+
+
 ![KPI](https://github.com/user-attachments/assets/1f8600cd-9e14-4b66-a6e2-fc5e19eca325)
+
+
 
 *KPI cards to visualize revenue, orders and returns comparing with last month's data*
 
@@ -77,6 +126,27 @@ High-value customers were identified by combining customer lookup, total orders,
 - *Mr. Maurice Shan* is the top revenue contributor ($12,400) with six orders from 2020-2022, followed closely by *Mrs. Janet Munoz* ($12,015).
 - Notably, high-value customers from 2020-2021, such as *Mr. Larry Vazquez*, *Mr. Clarence Gao*, *Mr. Aaron Wright*, and *Mrs. Bonnie Nath*, are absent in 2022, potentially indicating shifts in the customer profile or other market changes.
 - The *number of unique customers grew* from 2,630 to over 17,000 between 2020 and 2022, although *revenue per customer declined* by $1,000, as shown in a line chart.
+  
+```DAX
+Total Customers = 
+DISTINCTCOUNT(
+    'Sales Data'[CustomerKey]
+)
+Average Revenue Per Customer = 
+DIVIDE(
+    [Total Revenue],
+    [Total Customers]
+)
+Full Name (Customer Detail) = 
+IF(
+    HASONEVALUE(
+        'Customer Lookup'[CustomerKey]),
+    MAX(
+        'Customer Lookup'[Full Name]
+    ),
+    "Multiple Customers")
+```
+*DAX for measure table*
 
 ![Top customers](https://github.com/user-attachments/assets/5a5d9161-effb-447d-9d0c-3f5bf09f266e)
 
