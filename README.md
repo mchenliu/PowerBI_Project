@@ -21,7 +21,7 @@ Below are the questions I want to answer in my project:
 
 # The Analysis
 ### 1. Comparing with the previous month, were KPIs met?
-KPIs are split into 3 categories- revenue, orders and returns. To identify if KPIs are met, I first created current month and previous measure tables on these 3 aspects. Then inserted KPI cards to the canvas. 
+KPIs are split into 3 categories- revenue, orders and returns. To identify if KPIs are met, I combined current month and previous measure tables on these 3 aspects. 
 
 Here's an overall view of the KPIs comapring with previous month:
 - **Revenue:** a 3.31% increase from $1.77 million to $1.83 million.
@@ -41,22 +41,31 @@ I breakdown orders further by category and here are my findings:
 
 ![orders_breakdown](https://github.com/user-attachments/assets/33ae99ec-1adb-4554-943d-bedc9b9883bb)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
 
+
 - **Bikes:** 
     - Bikes sale contributes to most of the monthly revenue ($23.6M/$24.9M) It also has the highest profit among all 3 categories. Forcast is showing a steady growth in revenue and so is actual data. Growth in both revenue and order amount shows a promising sign. Meanwhile *Road-750 Black* is showing a high return rate of 4.23% that should be looked into.
     - The *Mountain-200* series are the most popular bikes. It's a road bike and the least favoured bike type is touring bikes.
 
 ![KPI](https://github.com/user-attachments/assets/58bb94c6-ea98-4e9c-b046-0fa636e22148)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
 
+
 - **Clothing:** 
     - Clothing has the least sale among all 3 categories and generates the least income. However, there is a slow growth in revenue based on forecast and there is a 10.85% increase in order amount and a 11.45% increase in revenue comparing to last month. This shows a positive sign for the clothing category.
     - The *AWC Logo Cap* is most favoured by consumers. It leads order amount and revenue in clothing category with a very low return rate of 1.11%. 
     - *Long-Sleeve Logo Jerseys* in all sizes have high return rates (around 3%). This should raise a flag for review.
 
-![KPI](https://github.com/user-attachments/assets/bec9150b-8544-4e79-a77b-5dce1f73ccf5)*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
+![KPI](https://github.com/user-attachments/assets/bec9150b-8544-4e79-a77b-5dce1f73ccf5)
+*Matrix with top 10 products filtering and condition formatting to drill KPIs further*
 
 
 ### 2. Which region has the best performance?
-To understand which region has the best performance, I used total orders measure table combining with terriotry hierarchy to drill down to country level. I can easily find most orders are coming from the US and Australia judjing by the size of their bubbles. Other orders are from Europe and Canada.
+To understand which region has the best performance, I used total orders measure table combining with terriotry hierarchy to drill down to country level.
+
+Here's my finding in which region has the best performance:
+
+Most orders are coming from the *US and Australia* judjing by the size of their bubbles.
+There are also orders from *Europe and Canada*.
+
 ![map](https://github.com/user-attachments/assets/b3d278e6-db5a-47cc-acdc-63d5dcc21556)
 *Map to visualize order amount by continent/country*
 
@@ -70,10 +79,26 @@ To understand which region has the best performance, I used total orders measure
 
 ![area chart](https://github.com/user-attachments/assets/634d97ce-5556-4d6d-bf63-541e7a01c384)
 *Area charts with drill mode on*
-### 4. Who are the high-value customers?
 
-![Revenue_per_customer](https://github.com/user-attachments/assets/678c0133-20cc-4857-beab-388b4f217d81)
-*Line chart to show revenue per customer*
+### 4. Who are the high-value customers?
+To find out who are the high-value customers. I combined customer lookup table with total orders table and total revenue table. A Year slicer is also added.
+
+Here are my findings about AdventureWorks' high-value customers:
+- *Mr. Maurice Shan* is the top revenue contributor ($12,400). He placed total of 6 orders from 2020 to 2022. Followed closely by *Mrs. Janet Munoz* ($12,015) who also placed 6 orders in the couse of 2020 to 2022.
+- From 2020 to 2021, *Mr. Larry Vazquez*, *Mr. Clarence Gao*, *Mr. Aaron Wright* and *Mrs. Bonnie Nath* are the high-value customers. Followed by overall valued customers *Mr. Maurice Shan* and *Mrs. Janet Munoz*. This might be an indicator that AdventureWorkds' customer profile has changed or something was wrong to cause drop of top 4 valued customers in a year.
+
+![Top customers](https://github.com/user-attachments/assets/5a5d9161-effb-447d-9d0c-3f5bf09f266e)
+
+*Matrix with filter to show top 100 customers*
+
+![Top customers2](https://github.com/user-attachments/assets/c1bc2cb1-50ec-4c21-9639-d7936eebdac1)
+
+*Year filter added to show changes in customers*
+
+- There is an *increase in number of unique customers and decrease in revenue per customer* between 2020 and 2022. The number of customers increased from 2,630 to over 17,000 while revenue per customer dropped by $1,000. The line chart is also showing a decreasing trend.
+![Revenue per customer](https://github.com/user-attachments/assets/84692b0f-edf5-4720-91cb-a7a3585e0fe3)
+*Line chart showing decreasing trend in revenue per customer*
+
 # What I Learned
 ### Insights
 ### Closing Thoughts
