@@ -1,10 +1,23 @@
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Background](#background)
+- [Tools I Used](#tools-i-used)
+- [The Analysis](#the-analysis)
+    - [1. Were KPIs met compared to the previous month?](#1-were-kpis-met-compared-to-the-previous-month)
+    - [2. Which region has the best performance?](#2-which-region-has-the-best-performance)
+    - [3. What are the product-level trends?](#3-what-are-the-product-level-trends)
+    - [4. Who are the high-value customers?](#4-who-are-the-high-value-customers)
+- [What I Learned](#what-i-learned)
+    - [Insights](#insights)
+
 # Introduction
 :mega: This project transforms raw data from AdventureWorks, a global manufacturer of cycling equipment and accessories, into insightful reports and dashboards. The primary objective is to track KPIs, compare regional performance, analyze product trends, and identify high-value customers. This project was completed as part of Maven Analytics' [course on Udemy](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop).
 
 :computer: Check out the PowerBI reoport here: [AdventureWorks Report](https://github.com/mchenliu/PowerBI_Project/blob/main/AdventureWorks%20Report.pbix)
 
 # Background
-### This Power BI report was created to answer the following key business questions:
+This Power BI report was created to answer the following key business questions:
 
 1. Were KPIs met compared to the previous month?
 2. Which region demonstrates the best performance?
