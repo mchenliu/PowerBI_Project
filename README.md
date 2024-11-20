@@ -8,8 +8,8 @@
     - [2. Which region has the best performance?](#2-which-region-has-the-best-performance)
     - [3. What are the product-level trends?](#3-what-are-the-product-level-trends)
     - [4. Who are the high-value customers?](#4-who-are-the-high-value-customers)
+- [Conclusion](#conclusion)
 - [What I Learned](#what-i-learned)
-    - [Insights](#insights)
 
 # Introduction
 :mega: This project transforms raw data from AdventureWorks, a global manufacturer of cycling equipment and accessories, into insightful reports and dashboards. The primary objective is to track KPIs, compare regional performance, analyze product trends, and identify high-value customers. This project was completed as part of Maven Analytics' [course on Udemy](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop).
@@ -212,17 +212,7 @@ IF(
 ![Revenue per customer](https://github.com/user-attachments/assets/84692b0f-edf5-4720-91cb-a7a3585e0fe3)
 *Line chart showing decreasing trend in revenue per customer*
 
-# What I Learned
-- :thermometer: **Technical Skills:** Although the raw data provided by the course wasn’t as "dirty" as real-world data, I learned to process data using the Query Editor, establish relationships between tables, create hierarchies, use DAX to build measure tables, and visualize insights through various chart types.
-
-- :thought_balloon: **Ask These Key Questions:** Before starting a project, I learned to ask three essential questions: What type of data am I working with? What message do I want to convey through this report? Who are the end users, and what do they need from this report?
-
-- :star: **Storytelling with Data:** Effective storytelling involves three steps: Why is this analysis important? What insights does the data reveal? What actions should be taken based on these insights?
-
-- :zap: **Dashboard Design:** A well-designed dashboard should serve a clear purpose for a specific audience, using concise and relevant metrics and visuals that offer an intuitive user experience. Presenting information as clearly as possible should always be a priority.
-
-
-### Insights
+# Conclusion
 1. Were KPIs met compared to the previous month?
     Overall, KPIs were achieved, supported primarily by steady revenue from bike sales. Although revenue and orders from clothing remain the smallest, they show a steady growth trend. However, management should pay attention to a declining trend in accessory sales.
     
@@ -233,3 +223,13 @@ IF(
 
 4. Who are the high-value customers?
     *Mr. Maurice Shan* and *Mrs. Janet Munoz* were the top revenue contributors from 2020 to 2022. Notably, there was a shift in high-value customer profiles after 2021, indicating potential changes in the market. Additionally, there is a growing trend in the number of unique customers, though revenue per customer has been declining from 2020 to 2022.
+
+# What I Learned
+- :thermometer: **Technical Skills:** Although the raw data provided by the course wasn’t as "dirty" as real-world data, I learned to process data using the Query Editor, establish relationships between tables, create hierarchies, use DAX to build measure tables, and visualize insights through various chart types.
+
+- :thought_balloon: **Ask These Key Questions:** Before starting a project, I learned to ask three essential questions: What type of data am I working with? What message do I want to convey through this report? Who are the end users, and what do they need from this report?
+
+- :star: **Storytelling with Data:** Effective storytelling involves three steps: Why is this analysis important? What insights does the data reveal? What actions should be taken based on these insights?
+
+- :zap: **Dashboard Design:** A well-designed dashboard should serve a clear purpose for a specific audience, using concise and relevant metrics and visuals that offer an intuitive user experience. Presenting information as clearly as possible should always be a priority.
+
