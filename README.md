@@ -1,4 +1,4 @@
-![AdventureWorks](/images)
+![AdventureWorks](/Company_images/AdventureWorks_Logo.png)
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
